@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './muscle.png';
+import logo from '../../images/muscle.png';
 // import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import SignupButton from './SignupButton.js';
