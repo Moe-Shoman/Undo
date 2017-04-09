@@ -4,7 +4,7 @@ import MuscleGroups from './MuscleGroups.js';
 import Muscle from './Muscle.js'
 
 
-class Dashboard extends Component {
+export default class Dashboard extends Component {
     render() {
         return (
             <div className="App">
@@ -18,5 +18,3 @@ class Dashboard extends Component {
         );
     }
 }
-
-export default Dashboard;

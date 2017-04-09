@@ -7,6 +7,7 @@ const style = {
 export default class MuscleGroups extends Component {
   render() {
     return (
+      // Think about making <li> and just make it clickable
       <div>
         <RaisedButton backgroundColor='grey' labelColor='black' label="Chest" secondary={true} style={style} />
         <RaisedButton backgroundColor='grey' labelColor='black' label="Shoulders" secondary={true} style={style} />
