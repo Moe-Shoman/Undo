@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Home from './Home/Home.js';
-import Dashboard from './Dashboard/MuscleGroups.js';
+import Dashboard from './Dashboard/Dashboard.js';
 import {
   BrowserRouter as Router,
   Route,
