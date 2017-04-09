@@ -9,7 +9,7 @@ import './index.css';
 
 //we create the store and make it available to our app through Provider.
 // const store = createStore(
-//   hnApp,
+//   rootReducer,
 //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
