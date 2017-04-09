@@ -1,9 +1,7 @@
-// import React, { Component } from 'react';
-//
-// export default class Muscle extends Component {
-//   render() {
-//     return (
-//
-//     )
-//   }
-// }
+import React from 'react';
+
+export const Muscle = ({ match }) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+  </div>
+)
