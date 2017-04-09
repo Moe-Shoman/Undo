@@ -14,7 +14,6 @@ class Home extends Component {
                 </div>
                 <p className="App-intro">
                     MoSho's and Killa Kev's Home.
-                    <code>src/App.js</code>
                 </p>
                 <MuiThemeProvider>
                     <SignupButton/>
