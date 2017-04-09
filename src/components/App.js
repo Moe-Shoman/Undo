@@ -18,15 +18,11 @@ class App extends Component {
                 <li><Link to='/'>Login</Link></li>
                 <li><Link to='/routines'>Routines</Link></li>
               </ul>
-            </div>
 
-            <Route exact path='/' component={Home} />
-            <Route path='/routines' component={Dashboard} />
-          </Router>
-            <div className="App">
-                <Home />
-                <Dashboard />
+              <Route exact path='/' component={Home} />
+              <Route path='/routines' component={Dashboard} />
             </div>
+          </Router>
         );
     }
 }
