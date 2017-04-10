@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const Muscle = ({ match }) => (
+const Muscle = ({ match }) => (
   <div>
-    <h3>{match.params.topicId}</h3>
+    <h3>ID: {match.params.muscle_type}</h3>
   </div>
-)
+);
+
+export default Muscle

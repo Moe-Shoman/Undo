@@ -18,10 +18,10 @@ class Home extends Component {
                     MoSho's and Killa Kev's Home.
                 </p>
                 <MuiThemeProvider>
-                    <SignupButton/>
+                    <LoginButton/>
                 </MuiThemeProvider>
                 <MuiThemeProvider>
-                    <LoginButton/>
+                    <SignupButton/>
                 </MuiThemeProvider>
                 <MuiThemeProvider>
                   <LoginForm />

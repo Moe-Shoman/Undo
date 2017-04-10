@@ -7,7 +7,7 @@ const style = {
 class LoginButton extends Component {
   render() {
     return (
-      <RaisedButton label="LOGIN" secondary={true} style={style} />
+      <RaisedButton label="LOGIN" backgroundColor='#C0C0C0' labelColor='#008b8b' style={style} />
     );
   }
 }
