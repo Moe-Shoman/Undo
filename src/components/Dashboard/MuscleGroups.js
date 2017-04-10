@@ -2,17 +2,24 @@ import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import Muscle from './Muscle';
+import { doSearch } from '../../actions';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 const style = {
   margin: 12,
 };
 
-const MuscleGroups = ({ match }) => {
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ doSearch }, dispatch)
+}
+
+const MuscleGroups = ({ match, onClick, doSearch }) => {
   return (
     // Think about making <li> and just make it clickable
     <Router>
       <div>
         <ul>
-          <li>
+          <li onClick={(event) => this.props.doSearch()}>
             <Link to='/routines/chest'>
               <RaisedButton backgroundColor='#C0C0C0' labelColor='#000000' label="Chest" style={style} />
             </Link>
