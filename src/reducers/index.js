@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import selectedExercise from './reducer_selectedExercise';
+import selectedExerciseReducer from './reducer_selectedExercise';
+import listReducer from './reducer_exercises';
+import selectedMuscleReducer from './reducer_selectedMuscle';
 
 const rootReducer = combineReducers({
-  selectedExercise: selectedExercise
+  selectedExercise: selectedExerciseReducer,
+  list: listReducer,
+  selectedMuscle: selectedMuscleReducer
 });
 
 export default rootReducer;

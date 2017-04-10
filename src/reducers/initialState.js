@@ -1,3 +1,5 @@
 export default {
-  selectedExercise: null
+  selectedExercise: '',
+  list: [],
+  selectedMuscle: '',
 }

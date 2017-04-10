@@ -1,10 +1,12 @@
 import initialState from './initialState';
 
-export default function(state = initialState.selectedExercise, action) => {
+const selectedExercise = (state = initialState.selectedExercise, action) => {
   switch(action.type) {
     case 'EXERCISE_SELECTED':
       return action.payload;
+    default:
+      return state;
   }
-  
-  return state
 }
+
+export default selectedExercise;
