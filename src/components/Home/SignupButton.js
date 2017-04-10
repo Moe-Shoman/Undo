@@ -7,7 +7,7 @@ const style = {
 class SignupButton extends Component {
   render() {
     return (
-      <RaisedButton label="SIGNUP" secondary={true} style={style} />
+      <RaisedButton label="SIGNUP" backgroundColor='#C0C0C0' labelColor='#000000' style={style} />
     );
   }
 }
