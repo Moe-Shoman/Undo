@@ -1,12 +1,12 @@
 import initialState from './initialState';
 
-const selectedMuscle = (state = initialState.selectedMuscle, action) => {
+const query = (state = initialState.query, action) => {
   switch(action.type) {
-    case 'MUSCLE_SELECTED':
+    case 'VIDEO_SEARCH_FULFILLED':
       return action.payload;
     default:
       return state;
   }
 }
 
-export default selectedMuscle;
+export default query;

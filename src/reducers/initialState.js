@@ -1,5 +1,7 @@
 export default {
-  selectedExercise: '',
+  selectedExercise: null,
   list: [],
-  selectedMuscle: '',
+  selectedMuscle: null,
+  selectedVideo: null,
+  query: '',
 }

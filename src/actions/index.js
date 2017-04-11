@@ -1,11 +1,32 @@
 import axios from 'axios';
 
 
-function getAllExercises() {
+function getAllExercises(inputMuscle) {
   const apiUrl = 'http://paolitaclo-routinegenerator.herokuapp.com/api/exercises';
   return axios
     .get(apiUrl)
-    .then(response => response.data)
+    .then((response) => {
+      inputMuscle.split('-').join(" ")
+      return response.data.filter((exercise) => {
+        if (exercise.muscle.name === inputMuscle) {
+          return exercise
+        }
+      })
+    })
+}
+
+function getRoutineVideos(query) {
+  query = query.charAt(0).toLowerCase() + query.slice(1)
+  const apiUrl = `http://paolitaclo-routinegenerator.herokuapp.com/api/routines?muscleGroup=${query}`;
+  return axios
+    .get(apiUrl)
+    .then((response) => {
+      let array = [];
+      for (let i = 4; i < response.length; i++) {
+        array.push(response[i].url)
+      }
+      return array
+    })
 }
 
 export const selectExercise = (selectedExercise) => {
@@ -15,16 +36,37 @@ export const selectExercise = (selectedExercise) => {
   }
 }
 
-export const doSearch = () => {
+export const doSearch = (selectedMuscle) => {
   return {
     type: 'DO_SEARCH',
-    payload: getAllExercises()
+    payload: getAllExercises(selectedMuscle)
   }
 }
 
 export const setMuscle = (selectedMuscle) => {
   return {
     type: 'MUSCLE_SELECTED',
-    selectedMuscle
+    payload: selectedMuscle
   }
 }
+
+export const selectVideo = (selectedVideo) => {
+  return {
+    type: 'ACTIVE_VIDEO',
+    payload: selectedVideo
+  }
+}
+
+export const findVideos = (query) => {
+  return {
+    type: 'VIDEO_SEARCH',
+    payload: getRoutineVideos(query)
+  }
+}
+
+// export const showVideoList = (videoList) => {
+//   return {
+//     type: 'VIDEO_LIST',
+//     payload: get
+//   }
+// }
