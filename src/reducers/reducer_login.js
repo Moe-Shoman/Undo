@@ -1,5 +1,5 @@
 const loggedIn = (state = {loggedIn: false} , action) => {
-  console.log('action.type', action.type, 'action.payload', action.payload);
+  console.log("The logged in action: ", 'action.type', action.type, 'action.payload', action.payload);
   switch(action.type) {
     // case '@@redux-form/SET_SUBMIT_SUCCEEDED':
     //   console.log('submitted', 'action.payload',action.payload);

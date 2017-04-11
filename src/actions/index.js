@@ -5,8 +5,7 @@ const loginRequest = (props) => {
   return axios.post(url, props).then(res => {
     console.log('res.data', res.data);
     return res.data;
-  }
-)
+  })
 }
 
 export const login = (props) => {
@@ -35,24 +34,10 @@ function getAllExercises(inputMuscle) {
     })
 }
 
-function getRoutineVideos(query) {
-  query = query.charAt(0).toLowerCase() + query.slice(1)
-  const apiUrl = `http://paolitaclo-routinegenerator.herokuapp.com/api/routines?muscleGroup=${query}`;
-  return axios
-    .get(apiUrl)
-    .then((response) => {
-      let array = [];
-      for (let i = 4; i < response.length; i++) {
-        array.push(response[i].url)
-      }
-      return array
-    })
-}
-
 export const selectExercise = (selectedExercise) => {
   return {
     type: 'EXERCISE_SELECTED',
-    selectedExercise
+    payload: selectedExercise
   }
 }
 
@@ -63,30 +48,9 @@ export const doSearch = (selectedMuscle) => {
   }
 }
 
-export const setMuscle = (selectedMuscle) => {
-  return {
-    type: 'MUSCLE_SELECTED',
-    payload: selectedMuscle
-  }
-}
-
 export const selectVideo = (selectedVideo) => {
   return {
-    type: 'ACTIVE_VIDEO',
+    type: 'VIDEO_SELECTED',
     payload: selectedVideo
   }
 }
-
-export const findVideos = (query) => {
-  return {
-    type: 'VIDEO_SEARCH',
-    payload: getRoutineVideos(query)
-  }
-}
-
-// export const showVideoList = (videoList) => {
-//   return {
-//     type: 'VIDEO_LIST',
-//     payload: get
-//   }
-// }
