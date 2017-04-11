@@ -13,7 +13,7 @@ export const login = (props) => {
   }
 }
 
-function getAllExercises() {
+function getAllExercises(inputMuscle) {
   const apiUrl = 'http://paolitaclo-routinegenerator.herokuapp.com/api/exercises';
   return axios
     .get(apiUrl)
