@@ -1,6 +1,9 @@
 const loggedIn = (state = {loggedIn: false} , action) => {
-  console.log('action', action);
+  console.log('action.type', action.type, 'action.payload', action.payload);
   switch(action.type) {
+    // case '@@redux-form/SET_SUBMIT_SUCCEEDED':
+    //   console.log('submitted', 'action.payload',action.payload);
+    //   return action.payload
     case 'LOGIN_PENDING':
     console.log('peending');
       return action.payload;

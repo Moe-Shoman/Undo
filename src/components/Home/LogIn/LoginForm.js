@@ -3,10 +3,10 @@ import { TextField } from 'redux-form-material-ui';
 import {Field, reduxForm} from 'redux-form';
 import SubmitButton from '../SubmitButton';
 import { login } from '../../../actions/index';
-// import { bindActionCreators } from 'redux';
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ login }, dispatch)
-// }
+import { bindActionCreators } from 'redux';
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ login }, dispatch)
+}
 
 
 class LoginForm extends Component {
@@ -15,6 +15,7 @@ class LoginForm extends Component {
         login(values);
     }
     render() {
+      console.log('this.props', this.props);
         const {handleSubmit} = this.props;
         return (
             <form onSubmit={handleSubmit(this.submit)}>
