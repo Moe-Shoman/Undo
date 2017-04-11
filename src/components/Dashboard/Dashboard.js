@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MuscleGroups from './MuscleGroups.js';
+import MuscleList from './MuscleList.js';
 
 
 export default class Dashboard extends Component {
@@ -8,7 +8,7 @@ export default class Dashboard extends Component {
         return (
             <div className="App">
                 <MuiThemeProvider>
-                    <MuscleGroups />
+                    <MuscleList />
                 </MuiThemeProvider>
             </div>
         );

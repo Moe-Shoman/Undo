@@ -1,12 +1,12 @@
 import initialState from './initialState';
 
-const selectedMuscle = (state = initialState.selectedMuscle, action) => {
+const selectedVideo = (state = initialState.selectedVideo, action) => {
   switch(action.type) {
-    case 'MUSCLE_SELECTED':
+    case 'ACTIVE_VIDEO':
       return action.payload;
     default:
       return state;
   }
 }
 
-export default selectedMuscle;
+export default selectedVideo;
