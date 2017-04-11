@@ -55,9 +55,11 @@ class ExerciseList extends React.Component {
 
   render() {
     return (
-      <div className='col-md-12'>
-        <h1 className='float'>
-          {this.props.match.params.muscle_type}
+      <div>
+        <h1 className='title'>
+          <strong>
+            {this.props.match.params.muscle_type}
+          </strong>
         </h1>
         <ul className="ExerciseList-list col-md-4 list-group">
           {this.renderList()}

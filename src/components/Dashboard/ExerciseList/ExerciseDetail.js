@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './ExerciseDetail.css';
 
 const mapStateToProps = (state) => {
   return {
@@ -11,8 +12,6 @@ const mapStateToProps = (state) => {
 
 class ExerciseDetail extends React.Component {
   render() {
-    console.log("exercise in exercise detail: ", this.props.selectedExercise)
-    console.log("selected video props: ", this.props.selectedVideo)
     if (this.props.selectedVideo) {
       const videoId = this.props.selectedVideo.id.videoId;
       const url = `https://www.youtube.com/embed/${videoId}`;
@@ -21,9 +20,18 @@ class ExerciseDetail extends React.Component {
           <div className='embed-responsive embed-responsive-16by9'>
             <iframe className='embed-responsive-item' src={url}></iframe>
           </div>
-          <div className='details'>
-            <div>{this.props.selectedVideo.snippet.title}</div>
-            <div>{this.props.selectedVideo.snippet.description}</div>
+          <div className='video-infopane'>
+            <div>
+              <h1 className='video-title'>
+                {this.props.selectedVideo.snippet.title}
+              </h1>
+            </div>
+            <div className='video-description'>
+              <h3 className='video-title'>
+                Description:
+              </h3>
+              {this.props.selectedVideo.snippet.description}
+            </div>
           </div>
         </div>
       )

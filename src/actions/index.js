@@ -26,11 +26,12 @@ function getAllExercises(inputMuscle) {
     .get(apiUrl)
     .then((response) => {
       inputMuscle.split('-').join(" ")
-      return response.data.filter((exercise) => {
+      let array = response.data.filter((exercise) => {
         if (exercise.muscle.name === inputMuscle) {
           return exercise
         }
       })
+      return array
     })
 }
 

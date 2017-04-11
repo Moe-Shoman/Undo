@@ -24,8 +24,6 @@ function mapDispatchToProps(dispatch) {
 
 class MuscleList extends React.Component{
   render() {
-    console.log("The selected exercise!!!!", this.props.selectedExercise)
-    console.log('The selected Video!!!!', this.props.selectedVideo)
     return (
       <Router>
         <div>
@@ -161,6 +159,11 @@ class MuscleList extends React.Component{
                   this.props.doSearch('Hamstrings');
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Hamstrings" style={style} />
               </Link>
+            </li>
+            <li>
+              <a href="https://www.weather.com">
+                <RaisedButton backgroundColor='#C0C0C0' labelColor='#000000' label="~*@!Weather!@*~" style={style} />
+              </a>
             </li>
           </ul>
 
