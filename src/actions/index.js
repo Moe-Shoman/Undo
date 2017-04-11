@@ -1,19 +1,27 @@
 import axios from 'axios';
 
+const loginRequest = (props) => {
+  const url = 'http://paolitaclo-routinegenerator.herokuapp.com/api/token';
+  return axios.post(url, props).then(res => {
+    console.log('res.data', res.data);
+    return res.data;
+  }
+)
+}
+
 export const login = (props) => {
-  console.log('login props', props);
-  const loginRequest = axios.post('http://paolitaclo-routinegenerator.herokuapp.com/api/token', props)
-    .then((res) => {
-      console.log('res.data', res.data);
-      return res.data
-    });
+  // console.log('login props', props);
+  // const loginRequest = axios.post(, props)
+  //   .then((res) => {
+  //      res.data
+  //   });
   return {
     type: 'LOGIN',
-    payload: loginRequest
+    payload: loginRequest(props)
   }
 }
 
-function getAllExercises() {
+function getAllExercises(inputMuscle) {
   const apiUrl = 'http://paolitaclo-routinegenerator.herokuapp.com/api/exercises';
   return axios
     .get(apiUrl)

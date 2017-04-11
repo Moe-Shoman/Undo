@@ -10,15 +10,14 @@ function mapDispatchToProps(dispatch) {
 
 
 class LoginForm extends Component {
-    submit = (values) => {
-      console.log('values', values);
-        login(values);
-    }
+    // submit = (values) => {
+    //   console.log('values', values);
+    //     login(values);
+    // }
     render() {
-      console.log('this.props', this.props);
         const {handleSubmit} = this.props;
         return (
-            <form onSubmit={handleSubmit(this.submit)}>
+            <form onSubmit={handleSubmit(login)}>
                 <Field component={TextField} name="email" hintText="Email" floatingLabelText="Email" errorText="This field is required" /><br/>
                 <Field component={TextField} name="password" hintText="Password" floatingLabelText="Password" errorText="This field is required" type="password" /><br/>
                 <SubmitButton/>
