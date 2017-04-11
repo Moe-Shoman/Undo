@@ -7,7 +7,7 @@ const style = {
 class SubmitButton extends Component {
   render() {
     return (
-      <RaisedButton label="SUBMIT" secondary={true} style={style} />
+      <RaisedButton label="SUBMIT" secondary={true} style={style} type="submit"/>
     );
   }
 }

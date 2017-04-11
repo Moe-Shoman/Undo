@@ -1,6 +1,17 @@
 import axios from 'axios';
 
-
+export const login = (props) => {
+  console.log('login props', props);
+  const loginRequest = axios.post('http://paolitaclo-routinegenerator.herokuapp.com/api/token', props)
+    .then((res) => {
+      console.log('res.data', res.data);
+      return res.data
+    });
+  return {
+    type: 'LOGIN',
+    payload: loginRequest
+  }
+}
 function getAllExercises() {
   const apiUrl = 'http://paolitaclo-routinegenerator.herokuapp.com/api/exercises';
   return axios

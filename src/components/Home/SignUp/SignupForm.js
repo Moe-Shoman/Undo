@@ -1,19 +1,24 @@
 import React, {Component} from 'react';
-import TextField from 'material-ui/TextField';
 import SubmitButton from '../SubmitButton';
-class LoginForm extends Component {
+import {Field, reduxForm} from 'redux-form';
+import {TextField} from 'redux-form-material-ui';
+class SignupForm extends Component {
+    submit = (values) => {
+        console.log('values', values);
+    }
     render() {
+        const {handleSubmit} = this.props;
         return (
-            <div>
-                <TextField hintText="First Name" floatingLabelText="First Name" errorText="This field is required"/><br/>
-                <TextField hintText="Last Name" floatingLabelText="Last Name" errorText="This field is required"/><br/>
-                <TextField hintText="Email" floatingLabelText="Email" errorText="This field is required"/><br/>
-                <TextField hintText="Password" floatingLabelText="Password" errorText="This field is required" type="password"/><br/>
-                <TextField hintText="Weight" floatingLabelText="Weight" errorText="This field is required" type="number"/><br/>
+            <form onSubmit={handleSubmit(this.submit)}>
+                <Field component={TextField} name="First Name" hintText="First Name" floatingLabelText="First Name" errorText="This field is required"/><br/>
+                <Field component={TextField} name="Last Name" hintText="Last Name" floatingLabelText="Last Name" errorText="This field is required"/><br/>
+                <Field component={TextField} name="Email" hintText="Email" floatingLabelText="Email" errorText="This field is required"/><br/>
+                <Field component={TextField} name="Password" hintText="Password" floatingLabelText="Password" errorText="This field is required" type="password"/><br/>
+                <Field component={TextField} name="Weight" hintText="Weight" floatingLabelText="Weight" errorText="This field is required" type="number"/><br/>
                 <SubmitButton/>
-            </div>
+            </form>
         );
     }
 };
 
-export default LoginForm;
+export default reduxForm({form: 'SignupForm'})(SignupForm);
