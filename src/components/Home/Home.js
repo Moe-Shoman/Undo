@@ -12,7 +12,16 @@ class Home extends Component {
                     <h2>ŪNDO</h2>
                 </div>
                 <p className="App-intro">
-                    MoSho's and Killa Kev's Home.
+                  <h3>
+                    Ūndo provides users the ability to:
+                  </h3>
+                    <ul>
+                      <li>find exercises based on muscle group</li>
+                      <li>set up fitness routines</li>
+                      <li>track their fitness goals</li>
+                      <li>watch exercise videos</li>
+                    </ul>
+
                 </p>
                 <MuiThemeProvider>
                     <LoginButton/>

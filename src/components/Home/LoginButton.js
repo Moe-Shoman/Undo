@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-import  LoginPage from '../LoginPage/LoginPage';
 const style = {
     margin: 12
 };
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 class LoginButton extends Component {
     render() {
         return (

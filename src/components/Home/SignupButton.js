@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import  SignupPage  from '../SignupPage/SignupPage';
+import { Link } from 'react-router-dom';
 const style = {
     margin: 12
 };
