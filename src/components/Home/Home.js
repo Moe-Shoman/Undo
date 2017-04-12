@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import logo from '../../images/muscle.png';
-// import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import SignupButton from './SignupButton';
 import LoginButton from './LoginButton';
-import LoginForm from './LogIn/LoginForm';
-import SignupForm from './SignUp/SignupForm'
 class Home extends Component {
     render() {
         return (
@@ -22,12 +19,6 @@ class Home extends Component {
                 </MuiThemeProvider>
                 <MuiThemeProvider>
                     <SignupButton/>
-                </MuiThemeProvider>
-                <MuiThemeProvider>
-                  <LoginForm />
-                </MuiThemeProvider>
-                <MuiThemeProvider>
-                  <SignupForm />
                 </MuiThemeProvider>
             </div>
         );

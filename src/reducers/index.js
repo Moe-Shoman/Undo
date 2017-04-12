@@ -6,6 +6,7 @@ import selectedVideoReducer from './reducer_selectedVideo';
 import queryReducer from './reducer_query';
 import { reducer as formReducer } from 'redux-form';
 import loggedInReducer from './reducer_login';
+import signedInReducer from './reducer_signUp';
 
 const rootReducer = combineReducers({
   selectedExercise: selectedExerciseReducer,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
   selectedVideo: selectedVideoReducer,
   query: queryReducer,
   form: formReducer,
-  loggedIn: loggedInReducer
+  loggedIn: loggedInReducer,
+  signedIn: signedInReducer
 });
 
 export default rootReducer;
