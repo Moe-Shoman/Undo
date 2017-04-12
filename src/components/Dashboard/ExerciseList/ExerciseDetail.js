@@ -17,6 +17,15 @@ class ExerciseDetail extends React.Component {
       const url = `https://www.youtube.com/embed/${videoId}`;
       return (
         <div className='col-md-8'>
+          <div>
+            <h2 className='video-title'>
+              {this.props.selectedExercise.name}
+            </h2>
+            <p className='video-description'>
+              Equipment: {this.props.selectedExercise.equipment.name} &nbsp;
+              Type of exercise: {this.props.selectedExercise.type.name}
+            </p>
+          </div>
           <div className='embed-responsive embed-responsive-16by9'>
             <iframe className='embed-responsive-item' src={url}></iframe>
           </div>
@@ -27,15 +36,14 @@ class ExerciseDetail extends React.Component {
               </h1>
             </div>
             <div className='video-description'>
-              <h3 className='video-title'>
-                Description:
-              </h3>
+              Description: <br />
               {this.props.selectedVideo.snippet.description}
             </div>
           </div>
         </div>
       )
     } else {
+      // The state hasn't been set yet.
       return null
     }
   }

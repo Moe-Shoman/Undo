@@ -22,7 +22,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ doSearch }, dispatch)
 }
 
-class MuscleList extends React.Component{
+export class MuscleList extends React.Component{
   render() {
     return (
       <Router>

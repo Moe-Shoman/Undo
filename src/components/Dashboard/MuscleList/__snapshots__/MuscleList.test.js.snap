@@ -1,0 +1,407 @@
+exports[`MuscleList component snapshots 1`] = `
+<BrowserRouter>
+  <div>
+    <Route
+      exact={true}
+      path="/routines"
+      render={[Function]} />
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Chest">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Chest"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Shoulders">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Shoulders"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Traps">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Traps"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+    </ul>
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Quadriceps">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Quadriceps"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Triceps">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Triceps"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Lats">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Lats"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+    </ul>
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Abdominals">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Abdominals"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Abductors">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Abductors"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Lower-Back">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Lower Back"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+    </ul>
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Adductors">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Adductors"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Middle-Back">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Mid Back"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Biceps">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Biceps"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+    </ul>
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Neck">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Neck"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Calves">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Calves"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Forearms">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Forearms"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+    </ul>
+    <ul
+      className="list-group col-md-2 MuscleList-list">
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Glutes">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Glutes"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/routines/Hamstrings">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="Hamstrings"
+            labelColor="#000000"
+            labelPosition="after"
+            onClick={[Function]}
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </Link>
+      </li>
+      <li>
+        <a
+          href="https://www.weather.com">
+          <RaisedButton
+            backgroundColor="#C0C0C0"
+            disabled={false}
+            fullWidth={false}
+            label="~*@!Weather!@*~"
+            labelColor="#000000"
+            labelPosition="after"
+            primary={false}
+            secondary={false}
+            style={
+              Object {
+                "margin": 12,
+              }
+            } />
+        </a>
+      </li>
+    </ul>
+    <Route
+      component={[Function]}
+      path="/routines/:muscle_type" />
+  </div>
+</BrowserRouter>
+`;
