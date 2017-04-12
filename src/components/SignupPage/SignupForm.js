@@ -33,6 +33,7 @@ class SignupForm extends Component {
                     <MenuItem value="Gain Muscle" primaryText="Gain Muscle"/>
                     <MenuItem value="Maintain" primaryText="Maintain"></MenuItem>
                 </Field>
+                <br/>
                 <SubmitButton/>
             </form>
         );
