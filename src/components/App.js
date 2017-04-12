@@ -16,9 +16,9 @@ class App extends Component {
         return (
           <Router>
             <div className='page'>
-              <ul>
-                <li><Link to='/'>Login</Link></li>
-                <li><Link to='/routines'>Routines</Link></li>
+              <ul className='navbar-ul'>
+                <li className='navbar-li'><Link to='/' className='navbar-Link'>Login</Link></li>
+                <li className='navbar-li'><Link to='/routines' className='navbar-Link'>Routines</Link></li>
               </ul>
               <Route path='/login' component={LoginPage} />
               <Route path='/signup' component={SignupPage}/>

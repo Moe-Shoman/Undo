@@ -1,0 +1,14 @@
+.video-title {
+  font-family: 'Cabin', sans-serif;
+}
+
+.video-description {
+  font-family: 'Mukta Vaani', sans-serif;
+}
+
+.video-infopane {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
-import MuscleDetail from './MuscleDetail';
+import ExerciseList from '../ExerciseList/ExerciseList.js';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { doSearch, setMuscle } from '../../actions';
+import { doSearch } from '../../../actions';
+import './MuscleList.css'
 const style = {
   margin: 12,
 };
@@ -12,20 +13,24 @@ const style = {
 function mapStateToProps(state) {
   return {
     list: state.list,
-    selectedMuscle: state.selectedMuscle
+    selectedExercise: state.selectedExercise,
+    selectedVideo: state.selectedVideo
   }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ doSearch, setMuscle }, dispatch)
+  return bindActionCreators({ doSearch }, dispatch)
 }
 
-class MuscleList extends React.Component{
+export class MuscleList extends React.Component{
   render() {
     return (
       <Router>
         <div>
-          <ul>
+          <Route exact path='/routines' render={() => (
+            <h3>Please pick a muscle group!</h3>
+          )}/>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Chest'>
                 <RaisedButton onClick={(event) => {
@@ -47,6 +52,8 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Traps" style={style} />
               </Link>
             </li>
+          </ul>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Quadriceps'>
                 <RaisedButton onClick={(event) => {
@@ -68,6 +75,8 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Lats" style={style} />
               </Link>
             </li>
+          </ul>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Abdominals'>
                 <RaisedButton onClick={(event) => {
@@ -89,6 +98,8 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Lower Back" style={style} />
               </Link>
             </li>
+          </ul>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Adductors'>
                 <RaisedButton onClick={(event) => {
@@ -100,7 +111,7 @@ class MuscleList extends React.Component{
               <Link to='/routines/Middle-Back'>
                 <RaisedButton onClick={(event) => {
                   this.props.doSearch('Middle Back');
-                }} backgroundColor='#C0C0C0' labelColor='#000000' label="Middle Back" style={style} />
+                }} backgroundColor='#C0C0C0' labelColor='#000000' label="Mid Back" style={style} />
               </Link>
             </li>
             <li>
@@ -110,6 +121,8 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Biceps" style={style} />
               </Link>
             </li>
+          </ul>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Neck'>
                 <RaisedButton onClick={(event) => {
@@ -131,6 +144,8 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Forearms" style={style} />
               </Link>
             </li>
+          </ul>
+          <ul className='list-group col-md-2 MuscleList-list'>
             <li>
               <Link to='/routines/Glutes'>
                 <RaisedButton onClick={(event) => {
@@ -145,12 +160,15 @@ class MuscleList extends React.Component{
                 }} backgroundColor='#C0C0C0' labelColor='#000000' label="Hamstrings" style={style} />
               </Link>
             </li>
+            <li>
+              <a href="https://www.weather.com">
+                <RaisedButton backgroundColor='#C0C0C0' labelColor='#000000' label="~*@!Weather!@*~" style={style} />
+              </a>
+            </li>
           </ul>
 
-          <Route path='/routines/:muscle_type' component={MuscleDetail}/>
-          <Route exact path='/routines' render={() => (
-            <h3>Please pick a muscle group!</h3>
-          )}/>
+          <Route path='/routines/:muscle_type' component={ExerciseList}/>
+
         </div>
       </Router>
     )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MuscleList from './MuscleList.js';
+import MuscleList from './MuscleList/MuscleList.js';
 
 
 export default class Dashboard extends Component {
