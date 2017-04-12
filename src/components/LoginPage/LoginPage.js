@@ -5,7 +5,7 @@ import './LoginPage.css';
 export default class LoginPage extends Component {
     render() {
         return (
-            <div>
+            <div className='Login-div'>
                 <MuiThemeProvider>
                     <LoginForm />
                 </MuiThemeProvider>
