@@ -15,7 +15,7 @@ class Home extends Component {
                   <h3>
                     Ūndo provides users the ability to:
                   </h3>
-                    <ul>
+                    <ul className="Intro-List">
                       <li>find exercises based on muscle group</li>
                       <li>set up fitness routines</li>
                       <li>track their fitness goals</li>
