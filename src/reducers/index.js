@@ -11,7 +11,7 @@ const rootReducer = combineReducers({
   list: listReducer,
   form: formReducer,
   loggedIn: loggedInReducer,
-  selectedVideo: activeVideoReducer
+  selectedVideo: activeVideoReducer,
   signedIn: signedInReducer
 });
 
