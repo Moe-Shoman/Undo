@@ -7,6 +7,8 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import LoginPage from './LoginPage/LoginPage';
+import SignupPage from './SignupPage/SignupPage'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 class App extends Component {
@@ -18,7 +20,8 @@ class App extends Component {
                 <li className='navbar-li'><Link to='/' className='navbar-Link'>Login</Link></li>
                 <li className='navbar-li'><Link to='/routines' className='navbar-Link'>Routines</Link></li>
               </ul>
-
+              <Route path='/login' component={LoginPage} />
+              <Route path='/signup' component={SignupPage}/>
               <Route exact path='/' component={Home} />
               <Route path='/routines' component={Dashboard} />
             </div>

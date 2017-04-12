@@ -1,6 +1,6 @@
 export default {
   selectedExercise: null,
   list: [],
-  query: '',
-  selectedVideo: null
+  selectedVideo: null,
+  loggedIn: false
 }

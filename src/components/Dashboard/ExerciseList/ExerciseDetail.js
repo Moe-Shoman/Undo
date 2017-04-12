@@ -4,7 +4,6 @@ import './ExerciseDetail.css';
 
 const mapStateToProps = (state) => {
   return {
-    query: state.query,
     selectedExercise: state.selectedExercise,
     selectedVideo: state.selectedVideo
   }
